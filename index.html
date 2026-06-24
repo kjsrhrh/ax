@@ -1,0 +1,117 @@
+<html>
+
+	<head>
+		<style>
+			#div1{
+				border:3px solid green;
+				height:15%;
+				background-color:green;
+				text-align:center;
+			}
+			#div2{
+				border:3px solid red;
+				height:70%;
+				background-color:yellow;
+				text-align:center;
+			}		     	
+			
+			#div3{
+				border:3px solid blue;
+				height:15%;
+				background-color:green;
+				text-align:center;
+			}
+			b{
+				font-size:3em;
+				color:white;
+				
+			 }
+			button{
+				width:15%; 
+				height:10%;
+				background-color:yellowgreen; 
+				color:green;
+				font-size:2em;
+				border-radius:20px;
+			}	
+	
+		</style>
+	</head>
+
+	<body>
+		<div id='div1'><b>이미지 제어</b></div>
+		<div id='div2'>
+			<img id='imgView1' src=' ' width='200px' height=auto><img id='imgView2' src=' 'width='200px' height=auto>
+			<img id='imgView3' src=' 'width='200px' height=auto><img id='imgView4' src=' 'width='200px' height=auto><img id='imgView5' src=' 'width='200px' height=auto>  
+			<br>  
+			<br>
+			<button onclick='get1( );'>1</button>
+			<button onclick='get2( );'>2</button>
+			<button onclick='get3( );'>3</button>
+			<button onclick='get4( );'>4</button>
+			<button onclick='get5( );'>5</button>
+			<br>
+			<br>
+			<button onclick='del1( );'>DEL 1</button>
+			<button onclick='del2( );'>DEL 2</button>
+			<button onclick='del3( );'>DEL 3</button>
+			<button onclick='del4( );'>DEL 4</button>
+			<button onclick='del5( );'>DEL 5</button>
+
+
+		</div>
+		<div id='div3'><b>한국폴리텍대학</b></div>
+		<script>
+			const img1=document.getElementById('imgView1');
+			const img2=document.getElementById('imgView2');
+			const img3=document.getElementById('imgView3');
+			const img4=document.getElementById('imgView4');
+			const img5=document.getElementById('imgView5');
+			
+			function get1( )
+			{
+				img1.src="https://raw.githubusercontent.com/kjsrhrh/ax/main/%ED%95%B4%ED%94%BC.png";
+			}
+			function del1( )
+			{
+				img1.src= ' ';
+			}
+			function get2( )
+			{
+				img2.src="https://raw.githubusercontent.com/kjsrhrh/ax/main/헝그리.gif";
+			}
+			function del2( )
+			{
+				img2.src= ' ';
+			}
+
+			function get3( )
+			{
+				img3.src="https://raw.githubusercontent.com/kjsrhrh/ax/main/통통.gif";
+			}
+			function del3( )
+			{
+				img3.src= ' ';
+			}
+			function get4( )
+			{
+				img4.src="https://raw.githubusercontent.com/kjsrhrh/ax/main/야호.png";
+			}
+			function del4( )
+			{
+				img4.src= ' ';
+			}
+
+			function get5( )
+			{
+				img5.src="https://raw.githubusercontent.com/kjsrhrh/ax/main/토끼.gif";
+			}
+			function del5( )
+			{
+				img5.src= ' ';
+			}
+		</script>
+
+	</body>
+
+</html>
